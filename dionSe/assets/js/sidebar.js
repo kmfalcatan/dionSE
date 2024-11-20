@@ -11,14 +11,12 @@ document.getElementById('toggleButton').addEventListener('click', function() {
         mainContainer.style.transition = 'margin-left 0.3s ease-in-out';
         headerContainer.style.transition = 'margin-left 0.3s ease-in-out';
         mainContainer.style.marginLeft = '250px';
-        mainContainer.style.width = '40%';
     } else {
         body.classList.add('sidebar-hidden');
         mainContainer.style.transition = 'margin-left 0.3s ease-in-out';
         headerContainer.style.transition = 'margin-left 0.3s ease-in-out';
         mainContainer.style.marginLeft = '0';
         headerContainer.style.left = '0';
-        mainContainer.style.width = '100%';
     }
 });
 

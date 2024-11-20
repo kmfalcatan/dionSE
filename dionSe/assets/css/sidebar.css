@@ -161,11 +161,10 @@ a{
   }
   
   .mainContainer {
-    margin-left: 15.5rem; 
+    margin-left: 210px; 
     text-align: center;
     transition: margin-left 0.3s ease-in-out;
     outline: red dashed 1px;
-    width: 100%;
     display: flex;
     justify-content: center;
   }

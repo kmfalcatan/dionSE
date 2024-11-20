@@ -213,7 +213,8 @@
 .addContainer, .editContainer{
     position: absolute;
     top: 0;
-    height: 100%;
+    bottom: 0;
+    height: 60rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.404);
     display: flex;
@@ -235,8 +236,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -266,6 +268,51 @@
     font-size: 1.2rem;
 }
 
+.image{
+    height: 4rem;
+}
+
+.uploadContainer{
+    outline: red dashed 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.subUploadContainer{
+    outline: red dashed 1px;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.uploadButton{
+    outline: red dashed 1px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.displayImage{
+    outline: red dashed 1px;
+    height: 100%;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.699);
+}
+
+.image1{
+    outline: red dashed 1px;
+    height: 100%;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
 /*Cellphone*/
 @media only screen and (max-width: 600px){
     table{
@@ -281,7 +328,7 @@
         width: 6rem;
     }
 
-    th, td{
+    th, td, .button{
         display: flex;
         flex-direction: column;
         border: solid #b8b8b8 0.1px;
@@ -350,7 +397,7 @@
     }
 
     .size{
-        width: 10rem;
+        width: 15rem;
     }
 
     .tableContainer{
@@ -364,5 +411,13 @@
     .textContainer{
         justify-content: left;
         padding-left: 10%;
+    }
+
+    .titleContainer{
+        font-size: 2rem;
+    }
+
+    .addContainer, .editContainer{
+        height: 100%;
     }
 }
