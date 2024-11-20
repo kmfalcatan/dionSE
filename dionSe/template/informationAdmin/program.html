@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/dionSe/assets/css/program.css">
+    <link rel="stylesheet" href="/dionSe/assets/css/sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div  class="sidebarContent">
+            <div class="arrowContainer" style="margin-left: 80rem;" id="toggleButton">
+                <div class="subArrowContainer">
+                    <img class="hideIcon" src="/dionSe/assets/img/arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="userContainer">
+            <div class="subUserContainer">
+                <div class="userPictureContainer" >
+                    <div class="subUserPictureContainer">
+                        <img class="subUserPictureContainer" src="/dionSe/assets/img/CSSPE.png" alt="">
+                    </div>
+                </div>
+
+                <div class="userPictureContainer1">
+                    <p>CSPE Inventory & Info System</p>
+                </div>
+            </div>
+    
+            <div class="navContainer">
+                <div class="subNavContainer">
+    
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Home</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Programs</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Faculty Members</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Organizations</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Memorandums</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Announcements</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Events</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="buttonContainer1">
+                            <div class="nameOfIconContainer">
+                                <p>Featured Images</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="subUserContainer">
+                <div style="margin-left: 1.5rem;" class="userPictureContainer1" onclick="showLogoutConfirmation()">
+                    <p>Logout</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="arrowContainer">
+            <div class="subArrowContainer">
+                <img class="hideIcon" src="../../assets/img/chevron-left (1).png" alt="">
+            </div>
+        </div>
+    
+        <div id="logoutConfirmation" class="popupContainer" style="display: none;">
+            <div class="popupModal">
+                <div class="popupContent" id="popupContent">
+                    <div class="logout-title">
+                        <p>Logout</p>
+                    </div>
+                    <p  class="confirmsg">Are you sure you want to log out?</p>
+                    <div class="popupButtons">
+                        <button  class="button4" onclick="logout()">Yes</button>
+                        <button  class="button3" onclick="hideLogoutConfirmation()" style="width: auto; padding: 0 0.7rem">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainContainer">
+        <div class="container">
+            <div class="textContainer">
+                <p>Programs</p>
+            </div>
+
+            <div class="searchContainer">
+                <input class="searchBar" type="text" placeholder="Search...">
+                <button class="addButton">Add Program</button>
+            </div>
+
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Program Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Hakdog</td>
+                            <td class="button">
+                                <button class="addButton" style="width: 5rem;">Edit</button>
+                                <button class="addButton" style="width: 5rem;">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/dionSe/assets/js/sidebar.js"></script>
+</body>
+</html>
