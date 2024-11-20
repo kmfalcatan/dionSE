@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/dionSe/assets/css/program.css">
+    <link rel="stylesheet" href="/dionSe/assets/css/facultyMember.css">
     <link rel="stylesheet" href="/dionSe/assets/css/sidebar.css">
 </head>
 <body>
@@ -123,20 +123,20 @@
                 </div>
 
                 <div class="textContainer">
-                    <p>Programs</p>
+                    <p>Faculty Members</p>
                 </div>
 
                 <div class="searchContainer">
                     <input class="searchBar" type="text" placeholder="Search...">
-                    <button onclick="addProgram()" class="addButton size">Add Program</button>
+                    <button onclick="addProgram()" class="addButton size">Add Faculty Member</button>
                 </div>
 
                 <div class="tableContainer">
                     <table>
                         <thead>
                             <tr>
-                                <th>Program Name</th>
-                                <th>Description</th>
+                                <th>Faculty Name</th>
+                                <th>Image</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -144,7 +144,9 @@
                         <tbody>
                             <tr>
                                 <td>Hakdog</td>
-                                <td>Hakdog</td>
+                                <td>
+                                    <img class="image" src="/dionSe/assets/img/CSSPE.png" alt="">
+                                </td>
                                 <td class="button">
                                     <button onclick="editProgram()" class="addButton" style="width: 5rem;">Edit</button>
                                     <button class="addButton1" style="width: 5rem;">Delete</button>
@@ -161,16 +163,46 @@
         <div class="addContainer">
             <div class="subAddContainer">
                 <div class="titleContainer">
-                    <p>Add Program</p>
+                    <p>Add Faculty Member</p>
                 </div>
     
                 <div class="subLoginContainer">
                     <div class="inputContainer">
-                        <input class="inputEmail" type="text" placeholder="Program Name:">
+                        <input class="inputEmail" type="text" placeholder="First Name:">
                     </div>
                     
-                    <div class="inputContainer" style="height: 10rem;">
-                        <textarea class="inputEmail" name="" id="" placeholder="Description"></textarea>
+                    <div class="inputContainer">
+                        <input class="inputEmail" type="text" placeholder="Last Name:">
+                    </div>
+                    
+                    <div class="inputContainer">
+                        <input class="inputEmail" type="text" placeholder="Middle Name (Optional):">
+                    </div>
+                    
+                    <div class="inputContainer">
+                        <input class="inputEmail" type="email" placeholder="Email:">
+                    </div>
+    
+                    <div class="inputContainer">
+                        <input class="inputEmail" type="text" placeholder="Address:">
+                    </div>
+                    
+                    <div class="inputContainer">
+                        <input class="inputEmail" type="text" placeholder="Contact No.:">
+                    </div>
+                    
+                    <div class="inputContainer">
+                        <input class="inputEmail" type="text" placeholder="Department:">
+                    </div>
+    
+                    <div class="inputContainer" style="gap: 0.5rem;">
+                        <select class="inputEmail" name="" id="">
+                            <option value="">Choose a rank</option>
+                            <option value="Instructor">Instructor</option>
+                            <option value="Assistant Professor">Assistant Professor</option>
+                            <option value="Associate Professor">Associate Professor</option>
+                            <option value="Professor">Professor</option>
+                        </select>
                     </div>
     
                     <div class="inputContainer" style="gap: 0.5rem; justify-content: right; padding-right: 0.9rem;">
@@ -186,22 +218,58 @@
         <div class="editContainer">
             <div class="subAddContainer">
                 <div class="titleContainer">
-                    <p>Edit Program</p>
+                    <p>Edit Faculty Member Information</p>
                 </div>
     
                 <div class="subLoginContainer">
                     <div class="inputContainer" style="flex-direction: column; height: 5rem;">
-                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Program Name:</label>
-                        <input class="inputEmail" type="text" placeholder="Program Name:">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">First Name:</label>
+                        <input class="inputEmail" type="text" placeholder="First Name:">
                     </div>
                     
-                    <div class="inputContainer" style="flex-direction: column; height: 5rem; min-height: 12rem;">
-                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Description:</label>
-                        <textarea style="min-height: 10rem;" class="inputEmail" name="" id="" placeholder="Description"></textarea>
+                    <div class="inputContainer" style="flex-direction: column; height: 5rem;">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Last Name:</label>
+                        <input class="inputEmail" type="text" placeholder="Last Name:">
+                    </div>
+                    
+                    <div class="inputContainer" style="flex-direction: column; height: 5rem;">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Middle Name:</label>
+                        <input class="inputEmail" type="text" placeholder="Middle Name (Optional):">
+                    </div>
+                    
+                    <div class="inputContainer" style="flex-direction: column; height: 5rem;">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Email:</label>
+                        <input class="inputEmail" type="email" placeholder="Email:">
+                    </div>
+    
+                    <div class="inputContainer" style="flex-direction: column; height: 5rem;">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Address:</label>
+                        <input class="inputEmail" type="text" placeholder="Address:">
+                    </div>
+                    
+                    <div class="inputContainer" style="flex-direction: column; height: 5rem;">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Contact No.:</label>
+                        <input class="inputEmail" type="text" placeholder="Contact No.:">
+                    </div>
+                    
+                    <div class="inputContainer" style="flex-direction: column; height: 5rem;">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Department:</label>
+                        <input class="inputEmail" type="text" placeholder="Department:">
+                    </div>
+                    
+                    <div class="inputContainer" style="flex-direction: column; height: 5rem;">
+                        <label for="" style="justify-content: left; display: flex; width: 100%; margin-left: 10%; font-size: 1.2rem;">Rank:</label>
+                        <select class="inputEmail" name="" id="">
+                            <option value="">Choose a rank</option>
+                            <option value="Instructor">Instructor</option>
+                            <option value="Assistant Professor">Assistant Professor</option>
+                            <option value="Associate Professor">Associate Professor</option>
+                            <option value="Professor">Professor</option>
+                        </select>
                     </div>
     
                     <div class="inputContainer" style="gap: 0.5rem; justify-content: right; padding-right: 1rem;">
-                        <button class="addButton" style="width: 6rem;">Add</button>
+                        <button class="addButton" style="width: 6rem;">Save</button>
                         <button onclick="editProgram()" class="addButton1" style="width: 6rem;">Cancel</button>
                     </div>
                 </div>

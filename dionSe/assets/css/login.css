@@ -20,6 +20,9 @@ html{
     height: 4rem;
     width: 100%;
     padding: 0 0.5rem 0 0.5rem;
+    background-color: rgb(109, 18, 10);
+    justify-content: space-between;
+    display: flex;
 }
 
 .subHeaderContainer{
@@ -36,10 +39,11 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: white dashed 1px;
 }
 
 .logo{
-    height: 80%;
+    height: 4rem;
 }
 
 .collegeNameContainer{
@@ -63,6 +67,7 @@ html{
     background-color: transparent;
     color: white;
     font-weight: bold;
+    margin-right: 1rem;
 }
 
 .aboutButton:hover{
@@ -82,7 +87,7 @@ html{
 
 .subContainer{
     outline: red dashed 1px;
-    height: 93%;
+    height: 93vh;
     background: url(../img/gym.jfif);
     background-position: center;
     background-repeat: no-repeat;
